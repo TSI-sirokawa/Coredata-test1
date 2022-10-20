@@ -18,10 +18,10 @@ struct PersistenceController {
 //            newItem.timestamp = Date()
 //        }
         ///  preview用初期データ登録処理
-         let newTask = Task(context: viewContext)
-         newTask.timestamp = Date()
-         newTask.checked = false
-         newTask.name = "初期タスク"
+        let newCategory = M_CATEGORY(context: viewContext)
+        newCategory.updDateTime = Date()
+        newCategory.checked = false
+        newCategory.categoryName = "初期タスク"
         do {
             try viewContext.save()
         } catch {

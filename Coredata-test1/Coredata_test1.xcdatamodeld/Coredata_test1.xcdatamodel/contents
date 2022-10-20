@@ -6,6 +6,7 @@
         <attribute name="categoryGroupId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="categoryId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="categoryName" optional="YES" attributeType="String"/>
+        <attribute name="checked" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="color" optional="YES" attributeType="String"/>
         <attribute name="displayFlag" optional="YES" attributeType="String"/>
         <attribute name="displaySequence" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
