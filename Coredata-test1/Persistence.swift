@@ -13,10 +13,15 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-        }
+//        for _ in 0..<10 {
+//            let newItem = Item(context: viewContext)
+//            newItem.timestamp = Date()
+//        }
+        ///  preview用初期データ登録処理
+         let newTask = Task(context: viewContext)
+         newTask.timestamp = Date()
+         newTask.checked = false
+         newTask.name = "初期タスク"
         do {
             try viewContext.save()
         } catch {
