@@ -11,13 +11,14 @@ import CoreData
 struct ContentView: View {
     /// 被管理オブジェクトコンテキスト（ManagedObjectContext）の取得
     @Environment(\.managedObjectContext) private var context
+    @StateObject private var m_categorymodel = M_CategoryModel()
     /// データ取得処理
     @FetchRequest(
         entity: M_CATEGORY.entity(),
         sortDescriptors: [NSSortDescriptor(keyPath: \M_CATEGORY.updDateTime, ascending: true)],
         predicate: nil
     ) private var categories: FetchedResults<M_CATEGORY>
-
+    
     @State private var searchText: String = ""
     
     var body: some View {
@@ -25,21 +26,26 @@ struct ContentView: View {
             /// 取得したデータをリスト表示
             List {
                 ForEach(categories) { category in
-                    
-                    /// タスクの表示
-                    HStack {
-                        Image(systemName: category.checked ? "checkmark.circle.fill" : "circle")
-                        Text("\(category.categoryCode!)")
-                        Text("\(category.categoryName!)")
-                        Spacer()
-                    }
-                    
-                    /// タスクをタップでcheckedフラグを変更する
-                    .contentShape(Rectangle())
-                    .onTapGesture {
-                        category.checked.toggle()
-                        try? context.save()
-                    }
+                    M_CategoryCardView(m_categoryModel: m_categorymodel, category: category)
+//                    VStack {
+//                        /// タスクの表示
+//                        //(destination: UpdTaskView(rec: categories.first!)){
+//                        NavigationLink(destination: AddTaskView()){
+//                            //HStack {
+//                            Image(systemName: category.checked ? "checkmark.circle.fill" : "circle")
+//                                .onTapGesture {
+//                                    category.checked.toggle()
+//                                    try? context.save()
+//                                }
+//                            Text("\(category.categoryCode!)")
+//                            Text("\(category.categoryName!)")
+//                            Spacer()
+//                            //}
+//                        }
+//
+//                        //                    /// タスクをタップでcheckedフラグを変更する
+//                        //                    .contentShape(Rectangle())
+//                    }
                 }
                 .onDelete(perform: deleteTasks)
             }
@@ -50,9 +56,20 @@ struct ContentView: View {
                     EditButton()
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: AddTaskView()) {
-                        Image(systemName: "plus")
+
+//                    NavigationLink(destination: AddTaskView()) {
+//                        Image(systemName: "plus")
+//                    }
+                    Button(action:
+                              {m_categorymodel.isNewData.toggle()
+                              }){
+                          Text("新規作成")
                     }
+          //タップするとシートが開く
+                      .sheet(isPresented: $m_categorymodel.isNewData,
+                          content: {
+                          M_CategorySheetView(m_categoryModel: m_categorymodel)
+                      })
                 }
             }
         }
@@ -64,15 +81,16 @@ struct ContentView: View {
         }
         
     }
+    
     private func search(text: String) {
-    if text.isEmpty {
-        categories.nsPredicate = nil // ①
-    } else {
-        let titlePredicate: NSPredicate = NSPredicate(format: "name contains %@", text) // ②
-        //let contentPredicate: NSPredicate = NSPredicate(format: "content contains %@", text) // ③
-        //tasks.nsPredicate = NSCompoundPredicate(orPredicateWithSubpredicates: [titlePredicate, contentPredicate]) //　④
-        categories.nsPredicate = NSCompoundPredicate(orPredicateWithSubpredicates: [titlePredicate]) //　④
-    }
+        if text.isEmpty {
+            categories.nsPredicate = nil // ①
+        } else {
+            let titlePredicate: NSPredicate = NSPredicate(format: "categoryName contains %@", text) // ②
+            //let contentPredicate: NSPredicate = NSPredicate(format: "content contains %@", text) // ③
+            //tasks.nsPredicate = NSCompoundPredicate(orPredicateWithSubpredicates: [titlePredicate, contentPredicate]) //　④
+            categories.nsPredicate = NSCompoundPredicate(orPredicateWithSubpredicates: [titlePredicate]) //　④
+        }
     }
     /// タスクの削除
     /// - Parameter offsets: 要素番号のコレクション
@@ -82,8 +100,9 @@ struct ContentView: View {
         }
         try? context.save()
     }
-
+    
 }
+
 /// タスク追加View
 struct AddTaskView: View {
     @Environment(\.managedObjectContext) private var context
@@ -111,7 +130,49 @@ struct AddTaskView: View {
                     newCategory.checked = false
                     
                     try? context.save()
- 
+                    
+                    /// 現在のViewを閉じる
+                    presentationMode.wrappedValue.dismiss()
+                }
+            }
+        }
+    }
+}
+
+/// 部門更新View
+struct UpdTaskView: View {
+    //public var recindex: String
+    public var rec: M_CATEGORY
+    @Environment(\.managedObjectContext) private var context
+    @Environment(\.presentationMode) var presentationMode
+    @State private var categorycode: String = ""
+    @State private var categoryname = ""
+    
+    //    init(rec: M_CATEGORY){
+    //        self._categorycode = ""//rec.categoryCode ? ""
+    //        self._categorycode = "1"//rec.categoryCode ?? ""
+    //    }
+    var body: some View {
+        Form {
+            Section() {
+                TextField("部門コードを入力", text: $categorycode)
+                TextField("部門名を入力", text: $categoryname)
+            }
+        }
+        .navigationTitle("部門追加")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button("保存") {
+                    /// 部門新規登録処理
+                    let newCategory = M_CATEGORY(context: context)
+                    newCategory.categoryCode = categorycode
+                    newCategory.categoryName = categoryname
+                    newCategory.insDateTime = Date()
+                    newCategory.updDateTime = Date()
+                    newCategory.checked = false
+                    
+                    try? context.save()
+                    
                     /// 現在のViewを閉じる
                     presentationMode.wrappedValue.dismiss()
                 }
