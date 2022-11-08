@@ -51,6 +51,7 @@ struct M_CategoryCardView: View {
                 
             })
             {
+                Text("削除")
                 Image(systemName: "trash")
                     .foregroundColor(Color.blue)
             }

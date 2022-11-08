@@ -10,6 +10,19 @@ import SwiftUI
 struct M_CategorySheetView: View {
     @ObservedObject var m_categoryModel : M_CategoryModel
     @Environment(\.managedObjectContext)private var context
+    enum FocusFields{
+        case categorycode
+        case categoryname
+        case categoryAbbr
+        case displaySequence
+        case displayFlag
+        case taxDivision
+        case reduceTaxId
+        case color
+        case categoryGroupId
+        case parentCategoryId
+    }
+    @FocusState var focuseState : FocusFields?
     
     var body: some View {
         VStack(alignment: .leading){
@@ -36,19 +49,35 @@ struct M_CategorySheetView: View {
                 //文字の入力
                 HStack{
                     Text("部門コード")
-                    TextField("部門コード", text: $m_categoryModel.categorycode).textFieldStyle(RoundedBorderTextFieldStyle())
+                    TextField("部門コード", text: $m_categoryModel.categorycode)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .keyboardType(.numberPad)
+                        .focused($focuseState, equals: .categorycode)
+                        .onSubmit({focuseState = .categoryname})
                 }
                 HStack{
                     Text("部門名")
-                    TextField("部門名", text: $m_categoryModel.categoryname).textFieldStyle(RoundedBorderTextFieldStyle())
+                    TextField("部門名", text: $m_categoryModel.categoryname)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .keyboardType(.namePhonePad)
+                        .focused($focuseState, equals: FocusFields.categoryname)
+                        .onSubmit({focuseState = .categoryAbbr})
                 }
                 HStack{
                     Text("部門名略称")
-                    TextField("部門名略称", text: $m_categoryModel.categoryAbbr).textFieldStyle(RoundedBorderTextFieldStyle())
+                    TextField("部門名略称", text: $m_categoryModel.categoryAbbr)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .keyboardType(.namePhonePad)
+                        .focused($focuseState, equals: FocusFields.categoryAbbr)
+                        .onSubmit{focuseState = .displaySequence}
                 }
                 HStack{
                     Text("表示順")
-                    TextField("表示順", value: $m_categoryModel.displaySequence, formatter: NumberFormatter()).textFieldStyle(RoundedBorderTextFieldStyle())
+                    TextField("表示順", value: $m_categoryModel.displaySequence, formatter: NumberFormatter())
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .keyboardType(.numberPad)
+                        .focused($focuseState, equals: FocusFields.displaySequence)
+                        .onSubmit({focuseState = .displayFlag})
                 }
                 HStack{
                     Text("端末表示")
@@ -56,6 +85,7 @@ struct M_CategorySheetView: View {
                         Text("表示しない").tag("0")
                         Text("表示する").tag("1")
                     }
+                    .focused($focuseState, equals: FocusFields.displayFlag)
                 }
                 HStack{
                     Text("税区分")
@@ -64,33 +94,57 @@ struct M_CategorySheetView: View {
                         Text("外税").tag("1")
                         Text("非課税").tag("2")
                     }
+                    .focused($focuseState, equals: FocusFields.taxDivision)
                 }
                 HStack{
                     Text("軽減税率ID")
-                    TextField("軽減税率ID", text: $m_categoryModel.reduceTaxId).textFieldStyle(RoundedBorderTextFieldStyle())
+                    //TextField("軽減税率ID", text: $m_categoryModel.reduceTaxId)
+                    TextField("軽減税率ID", value: $m_categoryModel.reduceTaxId, formatter: NumberFormatter())
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .keyboardType(.numberPad)
+                        .focused($focuseState, equals: FocusFields.reduceTaxId)
+                        .onSubmit({focuseState = .color})
                 }
                 
             }
             Group{
                 HStack{
                     Text("端末表示カラー")
-                    TextField("端末表示カラー", text: $m_categoryModel.color).textFieldStyle(RoundedBorderTextFieldStyle())
+                    TextField("端末表示カラー", text: $m_categoryModel.color)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .focused($focuseState, equals: FocusFields.color)
+                        .onSubmit({focuseState = .categoryGroupId})
                 }
                 HStack{
                     Text("部門グループID")
-                    TextField("部門グループID", value: $m_categoryModel.categoryGroupId, formatter: NumberFormatter()).textFieldStyle(RoundedBorderTextFieldStyle())
+                    TextField("部門グループID", value: $m_categoryModel.categoryGroupId, formatter: NumberFormatter())
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .focused($focuseState, equals: FocusFields.categoryGroupId)
+                        .onSubmit({focuseState = .parentCategoryId})
                 }
                 HStack{
                     Text("親部門ID")
-                    TextField("親部門ID", value: $m_categoryModel.parentCategoryId, formatter: NumberFormatter()).textFieldStyle(RoundedBorderTextFieldStyle())
+                    TextField("親部門ID", value: $m_categoryModel.parentCategoryId, formatter: NumberFormatter())
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .focused($focuseState, equals: FocusFields.parentCategoryId)
                 }
-//                //Bool値の選択ボタン
-//                Button(action: {m_categoryModel.bool.toggle()}){
-//                    Image(systemName: m_categoryModel.bool ? "star.fill":"star")
-//                }
                 Spacer()
             }
-        }.padding()
+        }
+        .onAppear {
+            /// 0.5秒の遅延発生後TextFieldに初期フォーカスをあてる
+            DispatchQueue.main.asyncAfter(deadline: .now()+0.5) {
+                focuseState = .categorycode
+            }
+        }
+        .onChange(of: m_categoryModel.displayFlag){ newValue in
+            focuseState = .taxDivision
+        }
+        .onChange(of: m_categoryModel.taxDivision){ newValue in
+            focuseState = .reduceTaxId
+        }
+        
+        //.padding()
     }
 }
 

@@ -18,7 +18,7 @@ class M_CategoryModel : ObservableObject{
     @Published var displayFlag = "1"
     @Published var taxDivision = "0"
     //@Published var reduceTaxId : Int32 = 0
-    @Published var reduceTaxId = "" //: Int32 = 0
+    @Published var reduceTaxId : Int32 = 0
     @Published var color = ""
     @Published var categoryGroupId : Int32 = 0
     @Published var parentCategoryId : Int32 = 0
@@ -110,7 +110,7 @@ class M_CategoryModel : ObservableObject{
         displaySequence = item.displaySequence
         displayFlag = item.displayFlag ?? ""
         taxDivision = item.taxDivision ?? ""
-        reduceTaxId = item.reduceTaxId ?? ""
+        reduceTaxId = item.reduceTaxId ?? 0//""
         color = item.color ?? ""
         categoryGroupId = item.categoryGroupId
         parentCategoryId = item.parentCategoryId
@@ -130,7 +130,7 @@ class M_CategoryModel : ObservableObject{
         displaySequence = 0
         displayFlag = "1"
         taxDivision = "0"
-        reduceTaxId = "" //0
+        reduceTaxId = 0//"" //0
         color = ""
         categoryGroupId = 0
         parentCategoryId = 0

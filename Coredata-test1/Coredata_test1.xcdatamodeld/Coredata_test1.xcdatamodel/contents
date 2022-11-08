@@ -13,7 +13,7 @@
         <attribute name="insDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="level" optional="YES" attributeType="String"/>
         <attribute name="parentCategoryId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="reduceTaxId" optional="YES" attributeType="String"/>
+        <attribute name="reduceTaxId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="taxDivision" optional="YES" attributeType="String"/>
         <attribute name="updDateTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
