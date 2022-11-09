@@ -20,6 +20,9 @@ struct M_CategoryCardView: View {
                 Text(category.categoryName ?? "")
                 Text(category.insDateTime ?? Date(), formatter: itemFormatter)
             }
+            .onTapGesture {
+                m_categoryModel.EditItem(item: category)
+            }
             //Image(systemName: samples.bool ? "star.fill":"star")
         }
         //カードの形

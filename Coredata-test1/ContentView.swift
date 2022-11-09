@@ -19,10 +19,10 @@ struct ContentView: View {
                     Text("部門")
                 }.tag(0)
 
-            TabBView()
+            M_CategoryLinkView()
                 .tabItem {
                     Image(systemName: "pencil.circle")
-                    Text("TabB")
+                    Text("部門ナビ")
                 }.tag(1)
 
         }
@@ -42,48 +42,6 @@ struct AddTaskView: View {
     @State private var categorycode = ""
     @State private var categoryname = ""
     
-    var body: some View {
-        Form {
-            Section() {
-                TextField("部門コードを入力", text: $categorycode)
-                TextField("部門名を入力", text: $categoryname)
-            }
-        }
-        .navigationTitle("部門追加")
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button("保存") {
-                    /// 部門新規登録処理
-                    let newCategory = M_CATEGORY(context: context)
-                    newCategory.categoryCode = categorycode
-                    newCategory.categoryName = categoryname
-                    newCategory.insDateTime = Date()
-                    newCategory.updDateTime = Date()
-                    newCategory.checked = false
-                    
-                    try? context.save()
-                    
-                    /// 現在のViewを閉じる
-                    presentationMode.wrappedValue.dismiss()
-                }
-            }
-        }
-    }
-}
-
-/// 部門更新View
-struct UpdTaskView: View {
-    //public var recindex: String
-    public var rec: M_CATEGORY
-    @Environment(\.managedObjectContext) private var context
-    @Environment(\.presentationMode) var presentationMode
-    @State private var categorycode: String = ""
-    @State private var categoryname = ""
-    
-    //    init(rec: M_CATEGORY){
-    //        self._categorycode = ""//rec.categoryCode ? ""
-    //        self._categorycode = "1"//rec.categoryCode ?? ""
-    //    }
     var body: some View {
         Form {
             Section() {
