@@ -19,7 +19,7 @@ struct ContentView: View {
                     Text("部門")
                 }.tag(0)
 
-            M_CategoryLinkView()
+            M_CategoryTableView()
                 .tabItem {
                     Image(systemName: "pencil.circle")
                     Text("部門ナビ")
