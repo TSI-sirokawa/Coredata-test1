@@ -27,6 +27,7 @@ struct M_CategoryLinkView: View {
             ZStack{
                 //更新画面への遷移の為の隠しNavigationLink
                 NavigationLink(destination: UpdTaskView(m_categoryModel: m_categorymodel), isActive: $isEditActive, label: { EmptyView()})
+                NavigationLink(destination: AddTaskView(), isActive: $m_categorymodel.isNewData, label: { EmptyView()})
                 /// 取得したデータをリスト表示
                 
                 List {

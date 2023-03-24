@@ -19,11 +19,17 @@ struct ContentView: View {
                     Text("部門")
                 }.tag(0)
 
+            M_CategoryLinkView()
+                .tabItem {
+                    Image(systemName: "list.clipboard.fill")
+                    Text("部門ナビ")
+                }.tag(1)
+
             M_CategoryTableView()
                 .tabItem {
                     Image(systemName: "pencil.circle")
-                    Text("部門ナビ")
-                }.tag(1)
+                    Text("部門テーブル")
+                }.tag(2)
 
         }
     }
