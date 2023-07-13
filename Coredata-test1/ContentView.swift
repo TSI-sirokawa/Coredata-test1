@@ -16,7 +16,7 @@ struct ContentView: View {
             M_CategoryListView()
                 .tabItem {
                     Image(systemName: "square.and.arrow.up")
-                    Text("部門")
+                    Text("部門1")
                 }.tag(0)
 
             M_CategoryLinkView()
