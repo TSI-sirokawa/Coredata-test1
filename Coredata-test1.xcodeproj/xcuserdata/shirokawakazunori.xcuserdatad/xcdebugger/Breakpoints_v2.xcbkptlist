@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3E393630-2BFF-4D24-82CD-3A4C24AD3BB9"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5DB0C8A2-B960-4847-AC60-638236424BA3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Coredata-test1/M_CategoryCardView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A3DF49CE-71E2-4C96-8098-325B8E06A34F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Coredata-test1/mregiApi/LoginUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "login(form:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A3DF49CE-71E2-4C96-8098-325B8E06A34F - b8efa0848cc9db6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Coredata_test1.LoginUseCase.login(form: Coredata_test1.LoginForm) async -&gt; Swift.Optional&lt;Coredata_test1.LoginResult&gt;"
+                  moduleName = "Coredata-test1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirokawakazunori/Documents/LearnCoredata/Coredata-test1/Coredata-test1/mregiApi/LoginUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "510">
+               </Location>
+               <Location
+                  uuid = "A3DF49CE-71E2-4C96-8098-325B8E06A34F - eeb5a936eb6e231e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Coredata_test1.LoginUseCase.login(form: Coredata_test1.LoginForm) async -&gt; Swift.Optional&lt;Coredata_test1.LoginResult&gt;"
+                  moduleName = "Coredata-test1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirokawakazunori/Documents/LearnCoredata/Coredata-test1/Coredata-test1/mregiApi/LoginUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "75">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E77846BC-1C21-4350-84FA-085460DC5800"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Coredata-test1/mregiApi/LoginUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "init(repository:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E77846BC-1C21-4350-84FA-085460DC5800 - 41bc2d945cdb68d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Coredata_test1.LoginUseCase.__allocating_init(repository: Coredata_test1.APIRepository) -&gt; Coredata_test1.LoginUseCase"
+                  moduleName = "Coredata-test1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirokawakazunori/Documents/LearnCoredata/Coredata-test1/Coredata-test1/mregiApi/LoginUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  uuid = "E77846BC-1C21-4350-84FA-085460DC5800 - a8ce944c777e8c6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Coredata_test1.LoginUseCase.init(repository: Coredata_test1.APIRepository) -&gt; Coredata_test1.LoginUseCase"
+                  moduleName = "Coredata-test1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirokawakazunori/Documents/LearnCoredata/Coredata-test1/Coredata-test1/mregiApi/LoginUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "E77846BC-1C21-4350-84FA-085460DC5800 - a8ce944c777e8c09"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Coredata_test1.LoginUseCase.init(repository: Coredata_test1.APIRepository) -&gt; Coredata_test1.LoginUseCase"
+                  moduleName = "Coredata-test1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirokawakazunori/Documents/LearnCoredata/Coredata-test1/Coredata-test1/mregiApi/LoginUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "673B249B-4642-4182-8B77-5E02BFF88BE8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Coredata-test1/mregiApi/MregiLogin.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "LoginViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "673B249B-4642-4182-8B77-5E02BFF88BE8 - ef998a4583884591"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 0 of Coredata_test1.LoginViewModel.init(useCase: Coredata_test1.LoginUseCaseProtocol) -&gt; Coredata_test1.LoginViewModel"
+                  moduleName = "Coredata-test1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirokawakazunori/Documents/LearnCoredata/Coredata-test1/Coredata-test1/mregiApi/MregiLogin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  uuid = "673B249B-4642-4182-8B77-5E02BFF88BE8 - b93ba973b8d6481f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Coredata_test1.LoginViewModel.__allocating_init(useCase: Coredata_test1.LoginUseCaseProtocol) -&gt; Coredata_test1.LoginViewModel"
+                  moduleName = "Coredata-test1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirokawakazunori/Documents/LearnCoredata/Coredata-test1/Coredata-test1/mregiApi/MregiLogin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  uuid = "673B249B-4642-4182-8B77-5E02BFF88BE8 - 32961691e3df1e26"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Coredata_test1.LoginViewModel.init(useCase: Coredata_test1.LoginUseCaseProtocol) -&gt; Coredata_test1.LoginViewModel"
+                  moduleName = "Coredata-test1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirokawakazunori/Documents/LearnCoredata/Coredata-test1/Coredata-test1/mregiApi/MregiLogin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "568">
+               </Location>
+               <Location
+                  uuid = "673B249B-4642-4182-8B77-5E02BFF88BE8 - ef998a4583884534"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 0 of Coredata_test1.LoginViewModel.init(useCase: Coredata_test1.LoginUseCaseProtocol) -&gt; Coredata_test1.LoginViewModel"
+                  moduleName = "Coredata-test1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirokawakazunori/Documents/LearnCoredata/Coredata-test1/Coredata-test1/mregiApi/MregiLogin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  uuid = "673B249B-4642-4182-8B77-5E02BFF88BE8 - 32961691e3df1f7d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Coredata_test1.LoginViewModel.init(useCase: Coredata_test1.LoginUseCaseProtocol) -&gt; Coredata_test1.LoginViewModel"
+                  moduleName = "Coredata-test1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirokawakazunori/Documents/LearnCoredata/Coredata-test1/Coredata-test1/mregiApi/MregiLogin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "568">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

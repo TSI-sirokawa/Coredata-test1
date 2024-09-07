@@ -19,6 +19,8 @@ struct M_CategoryListView: View {
     ) private var categories: FetchedResults<M_CATEGORY>
     
     @State private var searchText: String = ""
+    
+    @State private var selcntText: String = ""
 
     var body: some View {
         NavigationView {
@@ -48,7 +50,7 @@ struct M_CategoryListView: View {
                 }
                 .onDelete(perform: deleteTasks)
             }
-            .navigationTitle("部門リスト")
+            .navigationTitle("部門リスト" + selcntText)
             /// ツールバーの設定
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -89,6 +91,14 @@ struct M_CategoryListView: View {
             //tasks.nsPredicate = NSCompoundPredicate(orPredicateWithSubpredicates: [titlePredicate, contentPredicate]) //　④
             categories.nsPredicate = NSCompoundPredicate(orPredicateWithSubpredicates: [titlePredicate]) //　④
         }
+        
+        selcntText = categories.count.description
+        var sum : Int32 = 0
+        for x in 0..<categories.count {
+            var cat = categories[x]
+            sum += cat.displaySequence
+        }
+        selcntText = sum.description
     }
     /// タスクの削除
     /// - Parameter offsets: 要素番号のコレクション

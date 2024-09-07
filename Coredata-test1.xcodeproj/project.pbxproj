@@ -19,6 +19,26 @@
 		8B98FE07290F45E1002753BA /* M_CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98FE06290F45E1002753BA /* M_CategoryModel.swift */; };
 		8B98FE09290F5DFF002753BA /* M_CategorySheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98FE08290F5DFF002753BA /* M_CategorySheetView.swift */; };
 		8B98FE0B290F8B07002753BA /* M_CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98FE0A290F8B07002753BA /* M_CategoryCardView.swift */; };
+		8BBC27572C89A2C50023BA4F /* MregiLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC27562C89A2C50023BA4F /* MregiLogin.swift */; };
+		8BBC27592C89AB1C0023BA4F /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC27582C89AB1C0023BA4F /* LoginUseCase.swift */; };
+		8BBC275B2C89ACBB0023BA4F /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC275A2C89ACBB0023BA4F /* LoginForm.swift */; };
+		8BBC275D2C89AD330023BA4F /* LoginResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC275C2C89AD330023BA4F /* LoginResult.swift */; };
+		8BBC275F2C89AE060023BA4F /* BaseResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC275E2C89AE060023BA4F /* BaseResult.swift */; };
+		8BBC27612C89B1200023BA4F /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC27602C89B1200023BA4F /* UserInfo.swift */; };
+		8BBC27632C89B1770023BA4F /* AuthInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC27622C89B1770023BA4F /* AuthInfo.swift */; };
+		8BBC27652C8A97000023BA4F /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC27642C8A97000023BA4F /* AppContainer.swift */; };
+		8BBC27672C8A97B20023BA4F /* APIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC27662C8A97B20023BA4F /* APIRepository.swift */; };
+		8BBC27692C8A989D0023BA4F /* APIDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC27682C8A989D0023BA4F /* APIDriver.swift */; };
+		8BBC276C2C8AABEB0023BA4F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8BBC276B2C8AABEB0023BA4F /* Alamofire */; };
+		8BBC276E2C8AABEB0023BA4F /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 8BBC276D2C8AABEB0023BA4F /* AlamofireDynamic */; };
+		8BBC27702C8AAD350023BA4F /* JSONDecoder+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC276F2C8AAD350023BA4F /* JSONDecoder+Default.swift */; };
+		8BBC27722C8AADB90023BA4F /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC27712C8AADB90023BA4F /* AuthManager.swift */; };
+		8BBC27742C8AAEAD0023BA4F /* OAuthAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC27732C8AAEAD0023BA4F /* OAuthAuthenticator.swift */; };
+		8BBC27762C8AAF8B0023BA4F /* RefreshForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC27752C8AAF8B0023BA4F /* RefreshForm.swift */; };
+		8BBC27782C8AB02B0023BA4F /* PermanentDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC27772C8AB02B0023BA4F /* PermanentDataManager.swift */; };
+		8BBC277A2C8AB2FF0023BA4F /* Notification+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC27792C8AB2FF0023BA4F /* Notification+.swift */; };
+		8BBC277C2C8AC7A70023BA4F /* DataRequest+validateUnauthorized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC277B2C8AC7A70023BA4F /* DataRequest+validateUnauthorized.swift */; };
+		8BBC277E2C8AC8A20023BA4F /* RefreshResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC277D2C8AC8A20023BA4F /* RefreshResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +55,24 @@
 		8B98FE06290F45E1002753BA /* M_CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M_CategoryModel.swift; sourceTree = "<group>"; };
 		8B98FE08290F5DFF002753BA /* M_CategorySheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M_CategorySheetView.swift; sourceTree = "<group>"; };
 		8B98FE0A290F8B07002753BA /* M_CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M_CategoryCardView.swift; sourceTree = "<group>"; };
+		8BBC27562C89A2C50023BA4F /* MregiLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MregiLogin.swift; sourceTree = "<group>"; };
+		8BBC27582C89AB1C0023BA4F /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		8BBC275A2C89ACBB0023BA4F /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
+		8BBC275C2C89AD330023BA4F /* LoginResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResult.swift; sourceTree = "<group>"; };
+		8BBC275E2C89AE060023BA4F /* BaseResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResult.swift; sourceTree = "<group>"; };
+		8BBC27602C89B1200023BA4F /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		8BBC27622C89B1770023BA4F /* AuthInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInfo.swift; sourceTree = "<group>"; };
+		8BBC27642C8A97000023BA4F /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		8BBC27662C8A97B20023BA4F /* APIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRepository.swift; sourceTree = "<group>"; };
+		8BBC27682C8A989D0023BA4F /* APIDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDriver.swift; sourceTree = "<group>"; };
+		8BBC276F2C8AAD350023BA4F /* JSONDecoder+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Default.swift"; sourceTree = "<group>"; };
+		8BBC27712C8AADB90023BA4F /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		8BBC27732C8AAEAD0023BA4F /* OAuthAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthAuthenticator.swift; sourceTree = "<group>"; };
+		8BBC27752C8AAF8B0023BA4F /* RefreshForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshForm.swift; sourceTree = "<group>"; };
+		8BBC27772C8AB02B0023BA4F /* PermanentDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermanentDataManager.swift; sourceTree = "<group>"; };
+		8BBC27792C8AB2FF0023BA4F /* Notification+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+.swift"; sourceTree = "<group>"; };
+		8BBC277B2C8AC7A70023BA4F /* DataRequest+validateUnauthorized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+validateUnauthorized.swift"; sourceTree = "<group>"; };
+		8BBC277D2C8AC8A20023BA4F /* RefreshResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBC276C2C8AABEB0023BA4F /* Alamofire in Frameworks */,
+				8BBC276E2C8AABEB0023BA4F /* AlamofireDynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +107,7 @@
 		8B55262C28FF8EE80001B69B /* Coredata-test1 */ = {
 			isa = PBXGroup;
 			children = (
+				8BBC27552C89A0CF0023BA4F /* mregiApi */,
 				8B55262D28FF8EE80001B69B /* Coredata_test1App.swift */,
 				8B55262F28FF8EE80001B69B /* ContentView.swift */,
 				8B35FD72291A2FDD00A273AE /* M_CategoryListView.swift */,
@@ -91,6 +132,31 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		8BBC27552C89A0CF0023BA4F /* mregiApi */ = {
+			isa = PBXGroup;
+			children = (
+				8BBC27562C89A2C50023BA4F /* MregiLogin.swift */,
+				8BBC27582C89AB1C0023BA4F /* LoginUseCase.swift */,
+				8BBC275A2C89ACBB0023BA4F /* LoginForm.swift */,
+				8BBC275C2C89AD330023BA4F /* LoginResult.swift */,
+				8BBC275E2C89AE060023BA4F /* BaseResult.swift */,
+				8BBC27602C89B1200023BA4F /* UserInfo.swift */,
+				8BBC27622C89B1770023BA4F /* AuthInfo.swift */,
+				8BBC27642C8A97000023BA4F /* AppContainer.swift */,
+				8BBC27662C8A97B20023BA4F /* APIRepository.swift */,
+				8BBC27682C8A989D0023BA4F /* APIDriver.swift */,
+				8BBC276F2C8AAD350023BA4F /* JSONDecoder+Default.swift */,
+				8BBC27712C8AADB90023BA4F /* AuthManager.swift */,
+				8BBC27732C8AAEAD0023BA4F /* OAuthAuthenticator.swift */,
+				8BBC27752C8AAF8B0023BA4F /* RefreshForm.swift */,
+				8BBC27772C8AB02B0023BA4F /* PermanentDataManager.swift */,
+				8BBC27792C8AB2FF0023BA4F /* Notification+.swift */,
+				8BBC277B2C8AC7A70023BA4F /* DataRequest+validateUnauthorized.swift */,
+				8BBC277D2C8AC8A20023BA4F /* RefreshResult.swift */,
+			);
+			path = mregiApi;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +173,10 @@
 			dependencies = (
 			);
 			name = "Coredata-test1";
+			packageProductDependencies = (
+				8BBC276B2C8AABEB0023BA4F /* Alamofire */,
+				8BBC276D2C8AABEB0023BA4F /* AlamofireDynamic */,
+			);
 			productName = "Coredata-test1";
 			productReference = 8B55262A28FF8EE80001B69B /* Coredata-test1.app */;
 			productType = "com.apple.product-type.application";
@@ -135,6 +205,9 @@
 				Base,
 			);
 			mainGroup = 8B55262128FF8EE70001B69B;
+			packageReferences = (
+				8BBC276A2C8AABEB0023BA4F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 8B55262B28FF8EE80001B69B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -162,15 +235,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B8C95A5291B3E630016E5C9 /* M_CategoryLinkView.swift in Sources */,
+				8BBC27742C8AAEAD0023BA4F /* OAuthAuthenticator.swift in Sources */,
 				8B8C95A7291B80F40016E5C9 /* M_CategoryTableView.swift in Sources */,
+				8BBC27572C89A2C50023BA4F /* MregiLogin.swift in Sources */,
+				8BBC277E2C8AC8A20023BA4F /* RefreshResult.swift in Sources */,
 				8B55263728FF8EED0001B69B /* Persistence.swift in Sources */,
+				8BBC27612C89B1200023BA4F /* UserInfo.swift in Sources */,
 				8B55263028FF8EE80001B69B /* ContentView.swift in Sources */,
+				8BBC27782C8AB02B0023BA4F /* PermanentDataManager.swift in Sources */,
+				8BBC27762C8AAF8B0023BA4F /* RefreshForm.swift in Sources */,
+				8BBC27672C8A97B20023BA4F /* APIRepository.swift in Sources */,
+				8BBC27632C89B1770023BA4F /* AuthInfo.swift in Sources */,
 				8B98FE09290F5DFF002753BA /* M_CategorySheetView.swift in Sources */,
 				8B98FE07290F45E1002753BA /* M_CategoryModel.swift in Sources */,
 				8B35FD73291A2FDD00A273AE /* M_CategoryListView.swift in Sources */,
+				8BBC277A2C8AB2FF0023BA4F /* Notification+.swift in Sources */,
+				8BBC275D2C89AD330023BA4F /* LoginResult.swift in Sources */,
+				8BBC27652C8A97000023BA4F /* AppContainer.swift in Sources */,
+				8BBC275B2C89ACBB0023BA4F /* LoginForm.swift in Sources */,
 				8B55263A28FF8EED0001B69B /* Coredata_test1.xcdatamodeld in Sources */,
+				8BBC275F2C89AE060023BA4F /* BaseResult.swift in Sources */,
+				8BBC27692C8A989D0023BA4F /* APIDriver.swift in Sources */,
+				8BBC277C2C8AC7A70023BA4F /* DataRequest+validateUnauthorized.swift in Sources */,
 				8B98FE0B290F8B07002753BA /* M_CategoryCardView.swift in Sources */,
+				8BBC27702C8AAD350023BA4F /* JSONDecoder+Default.swift in Sources */,
+				8BBC27722C8AADB90023BA4F /* AuthManager.swift in Sources */,
 				8B55262E28FF8EE80001B69B /* Coredata_test1App.swift in Sources */,
+				8BBC27592C89AB1C0023BA4F /* LoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +464,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8BBC276A2C8AABEB0023BA4F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8BBC276B2C8AABEB0023BA4F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BBC276A2C8AABEB0023BA4F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		8BBC276D2C8AABEB0023BA4F /* AlamofireDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8BBC276A2C8AABEB0023BA4F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = AlamofireDynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		8B55263828FF8EED0001B69B /* Coredata_test1.xcdatamodeld */ = {

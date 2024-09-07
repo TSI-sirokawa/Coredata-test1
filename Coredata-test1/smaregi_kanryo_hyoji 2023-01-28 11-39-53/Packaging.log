@@ -1,0 +1,122 @@
+2023-01-28 02:39:33 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7fdf7592a2c0; archive(resolved)="<IDEArchive: 0x60001a43f420>", distributionTask(resolved)="2", distributionDestination(resolved)="1", distributionMethod(resolved)="<IDEDistributionMethodiOSAdHoc: 0x600070c16cf0>", team(resolved)="<IDEProvisioningDisambiguatableBasicTeam: 0x6000016b8240; teamID='4LB65X9AVQ', teamName='Kazunori Shirokawa', teamType='Individual', username='shirokawa@dream.com', isFreeProvisioningTeam='0'>">
+	Chain (14, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7fdf7592a2c0; archive = "<IDEArchive: 0x60001a43f420>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x600070c16cf0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x6000016b8240; teamID='4LB65X9AVQ', teamName='Kazunori Shirokawa', teamType='Individual', username='shirokawa@dream.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionProcessingPipelineContext: 0x7fdf8528b060; archive = "<IDEArchive: 0x60001a43f420>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x600070c16cf0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x6000016b8240; teamID='4LB65X9AVQ', teamName='Kazunori Shirokawa', teamType='Individual', username='shirokawa@dream.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fdf80088c60; archive = "<IDEArchive: 0x60001a43f420>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x600070c16cf0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x6000016b8240; teamID='4LB65X9AVQ', teamName='Kazunori Shirokawa', teamType='Individual', username='shirokawa@dream.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fdf726ec840; archive = "<IDEArchive: 0x60001a43f420>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x600070c16cf0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x6000016b8240; teamID='4LB65X9AVQ', teamName='Kazunori Shirokawa', teamType='Individual', username='shirokawa@dream.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fdf72653b70; archive = "<IDEArchive: 0x60001a43f420>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x600070c16cf0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x6000016b8240; teamID='4LB65X9AVQ', teamName='Kazunori Shirokawa', teamType='Individual', username='shirokawa@dream.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fdf722644e0; archive = "<IDEArchive: 0x60001a43f420>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x600070c16cf0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x6000016b8240; teamID='4LB65X9AVQ', teamName='Kazunori Shirokawa', teamType='Individual', username='shirokawa@dream.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fdf8619c010; archive = "<IDEArchive: 0x60001a43f420>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x600070c16cf0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x6000016b8240; teamID='4LB65X9AVQ', teamName='Kazunori Shirokawa', teamType='Individual', username='shirokawa@dream.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fdf749857c0; archive = "<IDEArchive: 0x60001a43f420>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x600070c16cf0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x6000016b8240; teamID='4LB65X9AVQ', teamName='Kazunori Shirokawa', teamType='Individual', username='shirokawa@dream.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fdf7499f6c0; archive = "<IDEArchive: 0x60001a43f420>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x600070c16cf0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x6000016b8240; teamID='4LB65X9AVQ', teamName='Kazunori Shirokawa', teamType='Individual', username='shirokawa@dream.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7fdf749766f0; archive = "<IDEArchive: 0x60001a43f420>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x600070c16cf0>", team="(null)">
+	<IDEDistributionContext: 0x7fdf861ec8d0; archive = "<IDEArchive: 0x60001a43f420>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x600070c16cf0>", team="(null)">
+	<IDEDistributionContext: 0x7fdf744daa50; archive = "<IDEArchive: 0x60001a43f420>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x600070c16cf0>", team="(null)">
+	<IDEDistributionContext: 0x7fdf74982760; archive = "<IDEArchive: 0x60001a43f420>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0x600070c16cf0>", team="(null)">
+	<IDEDistributionContext: 0x7fdf74982560; archive = "<IDEArchive: 0x60001a43f420>", distributionMethod="(null)", team="(null)">
+</IDEDistributionProcessingPipelineContext: 0x7fdf7592a2c0>
+2023-01-28 02:39:33 +0000  Processing step: IDEDistributionCreateDestRootStep
+2023-01-28 02:39:33 +0000  Processing step: IDEDistributionCopyItemStep
+2023-01-28 02:39:33 +0000  Running /usr/bin/ditto '-V' '/Users/shirokawakazunori/Library/Developer/Xcode/Archives/2023-01-28/smaregi_kanryo_hyoji 2023-01-28 11.39.xcarchive/Products/Applications/smaregi_kanryo_hyoji.app' '/var/folders/41/9s01lmd52zb38htzzf2zhr1h0000gn/T/XcodeDistPipeline.~~~UQx9N7/Root/Payload/smaregi_kanryo_hyoji.app'
+2023-01-28 02:39:33 +0000  >>> Copying /Users/shirokawakazunori/Library/Developer/Xcode/Archives/2023-01-28/smaregi_kanryo_hyoji 2023-01-28 11.39.xcarchive/Products/Applications/smaregi_kanryo_hyoji.app 
+2023-01-28 02:39:33 +0000  
+2023-01-28 02:39:33 +0000  copying file ./_CodeSignature/CodeResources ... 
+2023-01-28 02:39:33 +0000  2775 bytes for ./_CodeSignature/CodeResources
+2023-01-28 02:39:33 +0000  copying file ./AppIcon60x60@2x.png ... 
+2023-01-28 02:39:33 +0000  10727 bytes for ./AppIcon60x60@2x.png
+copying file ./smaregi_kanryo_hyoji ... 
+2023-01-28 02:39:33 +0000  1993616 bytes for ./smaregi_kanryo_hyoji
+copying file ./Assets.car ... 
+2023-01-28 02:39:33 +0000  407176 bytes for ./Assets.car
+2023-01-28 02:39:33 +0000  copying file ./AppIcon76x76@2x~ipad.png ... 
+2023-01-28 02:39:33 +0000  14530 bytes for ./AppIcon76x76@2x~ipad.png
+2023-01-28 02:39:33 +0000  copying file ./embedded.mobileprovision ... 
+2023-01-28 02:39:33 +0000  13988 bytes for ./embedded.mobileprovision
+copying file ./Info.plist ... 
+2023-01-28 02:39:33 +0000  1527 bytes for ./Info.plist
+2023-01-28 02:39:33 +0000  copying file ./PkgInfo ... 
+2023-01-28 02:39:33 +0000  8 bytes for ./PkgInfo
+2023-01-28 02:39:33 +0000  /usr/bin/ditto exited with 0
+2023-01-28 02:39:33 +0000  Processing step: IDEDistributionEmbedProfileStep
+2023-01-28 02:39:33 +0000  Processing step: IDEDistributionInfoPlistStep
+2023-01-28 02:39:33 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2023-01-28 02:39:33 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2023-01-28 02:39:33 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2023-01-28 02:39:33 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2023-01-28 02:39:33 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2023-01-28 02:39:33 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2023-01-28 02:39:33 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2023-01-28 02:39:33 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2023-01-28 02:39:33 +0000  Processing step: IDEDistributionSymbolsStep
+2023-01-28 02:39:33 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2023-01-28 02:39:33 +0000  Processing step: IDEDistributionAppThinningStep
+2023-01-28 02:39:33 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2023-01-28 02:39:33 +0000  Processing step: IDEDistributionArchThinningStep
+2023-01-28 02:39:33 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/41/9s01lmd52zb38htzzf2zhr1h0000gn/T/XcodeDistPipeline.~~~UQx9N7/Root/Payload/smaregi_kanryo_hyoji.app/smaregi_kanryo_hyoji' '-verify_arch' 'arm64e'
+2023-01-28 02:39:33 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2023-01-28 02:39:33 +0000  Skipping architecture thinning for item "smaregi_kanryo_hyoji" because arch "arm64e" wasn't found
+2023-01-28 02:39:33 +0000  Processing step: IDEDistributionODRStep
+2023-01-28 02:39:33 +0000  Processing step: IDEDistributionStripXattrsStep
+2023-01-28 02:39:33 +0000  Running /usr/bin/xattr '-crs' '/var/folders/41/9s01lmd52zb38htzzf2zhr1h0000gn/T/XcodeDistPipeline.~~~UQx9N7/Root/Payload/smaregi_kanryo_hyoji.app'
+2023-01-28 02:39:33 +0000  /usr/bin/xattr exited with 0
+2023-01-28 02:39:33 +0000  Processing step: IDEDistributionCodesignStep
+2023-01-28 02:39:33 +0000  Entitlements for <IDEDistributionItem: 0x60001aa80c60; bundleID='TSI.smaregi-kanryo-hyoji', path='<DVTFilePath:0x60000a11bc80:'/Users/shirokawakazunori/Library/Developer/Xcode/Archives/2023-01-28/smaregi_kanryo_hyoji 2023-01-28 11.39.xcarchive/Products/Applications/smaregi_kanryo_hyoji.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600032f1fb60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600007909340; name='iPhone Distribution: Kazunori Shirokawa (4LB65X9AVQ)', hash='7F45F70C6714349F6D3B399AC7C8C3BFEA746243', serialNumber='25E2F4B3B6538807EBA507B0AB247D58', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2022-07-19 07:41:32 +0000''>', entitlements='{
+    "application-identifier" = "4LB65X9AVQ.TSI.smaregi-kanryo-hyoji";
+    "com.apple.developer.team-identifier" = 4LB65X9AVQ;
+    "get-task-allow" = 0;
+}', teamID='4LB65X9AVQ', identifier='TSI.smaregi-kanryo-hyoji', executablePath='<DVTFilePath:0x60000a750850:'/Users/shirokawakazunori/Library/Developer/Xcode/Archives/2023-01-28/smaregi_kanryo_hyoji 2023-01-28 11.39.xcarchive/Products/Applications/smaregi_kanryo_hyoji.app/smaregi_kanryo_hyoji'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "4LB65X9AVQ.TSI.smaregi-kanryo-hyoji";
+    "com.apple.developer.team-identifier" = 4LB65X9AVQ;
+    "get-task-allow" = 0;
+}
+2023-01-28 02:39:33 +0000  Entitlements for <IDEDistributionItem: 0x60001aa80c60; bundleID='TSI.smaregi-kanryo-hyoji', path='<DVTFilePath:0x60000a11bc80:'/Users/shirokawakazunori/Library/Developer/Xcode/Archives/2023-01-28/smaregi_kanryo_hyoji 2023-01-28 11.39.xcarchive/Products/Applications/smaregi_kanryo_hyoji.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600032f1fb60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600007908f20; name='iPhone Distribution: Kazunori Shirokawa (4LB65X9AVQ)', hash='7F45F70C6714349F6D3B399AC7C8C3BFEA746243', serialNumber='25E2F4B3B6538807EBA507B0AB247D58', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2022-07-19 07:41:32 +0000''>', entitlements='{
+    "application-identifier" = "4LB65X9AVQ.TSI.smaregi-kanryo-hyoji";
+    "com.apple.developer.team-identifier" = 4LB65X9AVQ;
+    "get-task-allow" = 0;
+}', teamID='4LB65X9AVQ', identifier='TSI.smaregi-kanryo-hyoji', executablePath='<DVTFilePath:0x60000a750850:'/Users/shirokawakazunori/Library/Developer/Xcode/Archives/2023-01-28/smaregi_kanryo_hyoji 2023-01-28 11.39.xcarchive/Products/Applications/smaregi_kanryo_hyoji.app/smaregi_kanryo_hyoji'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "4LB65X9AVQ.TSI.smaregi-kanryo-hyoji";
+    "com.apple.developer.team-identifier" = 4LB65X9AVQ;
+    "get-task-allow" = 0;
+}
+2023-01-28 02:39:33 +0000  Writing entitlements for <IDEDistributionItem: 0x60001aa80c60; bundleID='TSI.smaregi-kanryo-hyoji', path='<DVTFilePath:0x60000a11bc80:'/Users/shirokawakazunori/Library/Developer/Xcode/Archives/2023-01-28/smaregi_kanryo_hyoji 2023-01-28 11.39.xcarchive/Products/Applications/smaregi_kanryo_hyoji.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600032f1fb60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600007908fd0; name='iPhone Distribution: Kazunori Shirokawa (4LB65X9AVQ)', hash='7F45F70C6714349F6D3B399AC7C8C3BFEA746243', serialNumber='25E2F4B3B6538807EBA507B0AB247D58', certificateKinds='(
+    "1.2.840.113635.100.6.1.4"
+), issueDate='2022-07-19 07:41:32 +0000''>', entitlements='{
+    "application-identifier" = "4LB65X9AVQ.TSI.smaregi-kanryo-hyoji";
+    "com.apple.developer.team-identifier" = 4LB65X9AVQ;
+    "get-task-allow" = 0;
+}', teamID='4LB65X9AVQ', identifier='TSI.smaregi-kanryo-hyoji', executablePath='<DVTFilePath:0x60000a750850:'/Users/shirokawakazunori/Library/Developer/Xcode/Archives/2023-01-28/smaregi_kanryo_hyoji 2023-01-28 11.39.xcarchive/Products/Applications/smaregi_kanryo_hyoji.app/smaregi_kanryo_hyoji'>', hardenedRuntime='0'>'> to: /var/folders/41/9s01lmd52zb38htzzf2zhr1h0000gn/T/XcodeDistPipeline.~~~UQx9N7/entitlements~~~E2lM9z
+2023-01-28 02:39:33 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '7F45F70C6714349F6D3B399AC7C8C3BFEA746243' '--entitlements' '/var/folders/41/9s01lmd52zb38htzzf2zhr1h0000gn/T/XcodeDistPipeline.~~~UQx9N7/entitlements~~~E2lM9z' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/41/9s01lmd52zb38htzzf2zhr1h0000gn/T/XcodeDistPipeline.~~~UQx9N7/Root/Payload/smaregi_kanryo_hyoji.app'
+2023-01-28 02:39:33 +0000  /var/folders/41/9s01lmd52zb38htzzf2zhr1h0000gn/T/XcodeDistPipeline.~~~UQx9N7/Root/Payload/smaregi_kanryo_hyoji.app: replacing existing signature
+2023-01-28 02:39:49 +0000  /var/folders/41/9s01lmd52zb38htzzf2zhr1h0000gn/T/XcodeDistPipeline.~~~UQx9N7/Root/Payload/smaregi_kanryo_hyoji.app: signed app bundle with Mach-O thin (arm64) [TSI.smaregi-kanryo-hyoji]
+2023-01-28 02:39:49 +0000  /usr/bin/codesign exited with 0
+2023-01-28 02:39:49 +0000  Processing step: IDEDistributionZipODRItemStep
+2023-01-28 02:39:49 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2023-01-28 02:39:49 +0000  Processing step: IDEDistributionCreateIPAStep
+2023-01-28 02:39:49 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/41/9s01lmd52zb38htzzf2zhr1h0000gn/T/XcodeDistPipeline.~~~UQx9N7/Root' '/var/folders/41/9s01lmd52zb38htzzf2zhr1h0000gn/T/XcodeDistPipeline.~~~UQx9N7/Packages/smaregi_kanryo_hyoji.ipa'
+2023-01-28 02:39:49 +0000  >>> Copying /var/folders/41/9s01lmd52zb38htzzf2zhr1h0000gn/T/XcodeDistPipeline.~~~UQx9N7/Root 
+2023-01-28 02:39:49 +0000  copying file ./Payload/smaregi_kanryo_hyoji.app/_CodeSignature/CodeResources ... 
+2023-01-28 02:39:49 +0000  2775 bytes for ./Payload/smaregi_kanryo_hyoji.app/_CodeSignature/CodeResources
+2023-01-28 02:39:49 +0000  copying file ./Payload/smaregi_kanryo_hyoji.app/AppIcon60x60@2x.png ... 
+2023-01-28 02:39:49 +0000  10727 bytes for ./Payload/smaregi_kanryo_hyoji.app/AppIcon60x60@2x.png
+copying file ./Payload/smaregi_kanryo_hyoji.app/smaregi_kanryo_hyoji ... 
+2023-01-28 02:39:49 +0000  1993616 bytes for ./Payload/smaregi_kanryo_hyoji.app/smaregi_kanryo_hyoji
+copying file ./Payload/smaregi_kanryo_hyoji.app/Assets.car ... 
+2023-01-28 02:39:49 +0000  407176 bytes for ./Payload/smaregi_kanryo_hyoji.app/Assets.car
+2023-01-28 02:39:49 +0000  copying file ./Payload/smaregi_kanryo_hyoji.app/AppIcon76x76@2x~ipad.png ... 
+2023-01-28 02:39:49 +0000  14530 bytes for ./Payload/smaregi_kanryo_hyoji.app/AppIcon76x76@2x~ipad.png
+2023-01-28 02:39:49 +0000  copying file ./Payload/smaregi_kanryo_hyoji.app/embedded.mobileprovision ... 
+2023-01-28 02:39:49 +0000  13988 bytes for ./Payload/smaregi_kanryo_hyoji.app/embedded.mobileprovision
+copying file ./Payload/smaregi_kanryo_hyoji.app/Info.plist ... 
+1527 bytes for ./Payload/smaregi_kanryo_hyoji.app/Info.plist
+copying file ./Payload/smaregi_kanryo_hyoji.app/PkgInfo ... 
+2023-01-28 02:39:49 +0000  8 bytes for ./Payload/smaregi_kanryo_hyoji.app/PkgInfo
+2023-01-28 02:39:49 +0000  /usr/bin/ditto exited with 0
+2023-01-28 02:39:49 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2023-01-28 02:39:49 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2023-01-28 02:39:49 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2023-01-28 02:39:49 +0000  IDEDistributionItem init <DVTFilePath:0x60000a280700:'/var/folders/41/9s01lmd52zb38htzzf2zhr1h0000gn/T/XcodeDistPipeline.~~~UQx9N7/Root/Payload/smaregi_kanryo_hyoji.app'>
+2023-01-28 02:39:49 +0000  Processing step: IDEDistributionCreateManifestStep

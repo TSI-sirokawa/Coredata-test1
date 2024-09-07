@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>smaregi_kanryo_hyoji.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>32</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>7F45F70C6714349F6D3B399AC7C8C3BFEA746243</string>
+				<key>dateExpires</key>
+				<string>2023/07/19</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>4LB65X9AVQ.TSI.smaregi-kanryo-hyoji</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>4LB65X9AVQ</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>smaregi_kanryo_hyoji.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>44dc955d-5904-424a-a3c6-4d1a1e30e479</string>
+				<key>dateExpires</key>
+				<string>2023/07/19</string>
+				<key>name</key>
+				<string>Nanryo-hyoji adhoc 20220721</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>4LB65X9AVQ</string>
+				<key>name</key>
+				<string>Kazunori Shirokawa</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.32</string>
+		</dict>
+	</array>
+</dict>
+</plist>
