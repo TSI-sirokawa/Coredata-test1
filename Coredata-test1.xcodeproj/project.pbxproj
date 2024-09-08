@@ -19,6 +19,8 @@
 		8B98FE07290F45E1002753BA /* M_CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98FE06290F45E1002753BA /* M_CategoryModel.swift */; };
 		8B98FE09290F5DFF002753BA /* M_CategorySheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98FE08290F5DFF002753BA /* M_CategorySheetView.swift */; };
 		8B98FE0B290F8B07002753BA /* M_CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98FE0A290F8B07002753BA /* M_CategoryCardView.swift */; };
+		8BB667712C8D3D0600313900 /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB667702C8D3D0600313900 /* Setup.swift */; };
+		8BB667732C8D3DE300313900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB667722C8D3DE300313900 /* AppDelegate.swift */; };
 		8BBC27572C89A2C50023BA4F /* MregiLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC27562C89A2C50023BA4F /* MregiLogin.swift */; };
 		8BBC27592C89AB1C0023BA4F /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC27582C89AB1C0023BA4F /* LoginUseCase.swift */; };
 		8BBC275B2C89ACBB0023BA4F /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC275A2C89ACBB0023BA4F /* LoginForm.swift */; };
@@ -55,6 +57,9 @@
 		8B98FE06290F45E1002753BA /* M_CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M_CategoryModel.swift; sourceTree = "<group>"; };
 		8B98FE08290F5DFF002753BA /* M_CategorySheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M_CategorySheetView.swift; sourceTree = "<group>"; };
 		8B98FE0A290F8B07002753BA /* M_CategoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M_CategoryCardView.swift; sourceTree = "<group>"; };
+		8BB667702C8D3D0600313900 /* Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setup.swift; sourceTree = "<group>"; };
+		8BB667722C8D3DE300313900 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8BB667742C8D572800313900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8BBC27562C89A2C50023BA4F /* MregiLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MregiLogin.swift; sourceTree = "<group>"; };
 		8BBC27582C89AB1C0023BA4F /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 		8BBC275A2C89ACBB0023BA4F /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
@@ -107,6 +112,7 @@
 		8B55262C28FF8EE80001B69B /* Coredata-test1 */ = {
 			isa = PBXGroup;
 			children = (
+				8BB667742C8D572800313900 /* Info.plist */,
 				8BBC27552C89A0CF0023BA4F /* mregiApi */,
 				8B55262D28FF8EE80001B69B /* Coredata_test1App.swift */,
 				8B55262F28FF8EE80001B69B /* ContentView.swift */,
@@ -153,6 +159,8 @@
 				8BBC27792C8AB2FF0023BA4F /* Notification+.swift */,
 				8BBC277B2C8AC7A70023BA4F /* DataRequest+validateUnauthorized.swift */,
 				8BBC277D2C8AC8A20023BA4F /* RefreshResult.swift */,
+				8BB667702C8D3D0600313900 /* Setup.swift */,
+				8BB667722C8D3DE300313900 /* AppDelegate.swift */,
 			);
 			path = mregiApi;
 			sourceTree = "<group>";
@@ -239,6 +247,7 @@
 				8B8C95A7291B80F40016E5C9 /* M_CategoryTableView.swift in Sources */,
 				8BBC27572C89A2C50023BA4F /* MregiLogin.swift in Sources */,
 				8BBC277E2C8AC8A20023BA4F /* RefreshResult.swift in Sources */,
+				8BB667712C8D3D0600313900 /* Setup.swift in Sources */,
 				8B55263728FF8EED0001B69B /* Persistence.swift in Sources */,
 				8BBC27612C89B1200023BA4F /* UserInfo.swift in Sources */,
 				8B55263028FF8EE80001B69B /* ContentView.swift in Sources */,
@@ -251,6 +260,7 @@
 				8B35FD73291A2FDD00A273AE /* M_CategoryListView.swift in Sources */,
 				8BBC277A2C8AB2FF0023BA4F /* Notification+.swift in Sources */,
 				8BBC275D2C89AD330023BA4F /* LoginResult.swift in Sources */,
+				8BB667732C8D3DE300313900 /* AppDelegate.swift in Sources */,
 				8BBC27652C8A97000023BA4F /* AppContainer.swift in Sources */,
 				8BBC275B2C89ACBB0023BA4F /* LoginForm.swift in Sources */,
 				8B55263A28FF8EED0001B69B /* Coredata_test1.xcdatamodeld in Sources */,
@@ -393,6 +403,7 @@
 				DEVELOPMENT_TEAM = 4LB65X9AVQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Coredata-test1/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -423,6 +434,7 @@
 				DEVELOPMENT_TEAM = 4LB65X9AVQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Coredata-test1/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

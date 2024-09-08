@@ -10,6 +10,8 @@ import SwiftUI
 @main
 struct Coredata_test1App: App {
     let persistenceController = PersistenceController.shared
+    @UIApplicationDelegateAdaptor(AppDelegate.self)
+    var appDelegate
 
     var body: some Scene {
         WindowGroup {
