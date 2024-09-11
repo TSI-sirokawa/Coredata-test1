@@ -12,15 +12,34 @@ struct MregiLogin: View {
 
     var body: some View {
         ZStack{
-            Button {
-                SwiftUI.Task {
-                    await model.login()
+            HStack{
+                Button {
+                    SwiftUI.Task {
+                        await model.login()
+                        //model.isProductSearchViewPresented = true
+                    }
+                } label: {
+                    Text("ログイン").font(.system(size: 20, weight: .bold))
+                        .frame(width: 158, height: 38)
                 }
-            } label: {
-                Text("ログイン").font(.system(size: 20, weight: .bold))
-                    .frame(width: 158, height: 38)
-
+                Button {
+                    SwiftUI.Task {
+                        model.isProductSearchViewPresented = true
+                    }
+                } label: {
+                    Text("商品リスト").font(.system(size: 20, weight: .bold))
+                        .frame(width: 158, height: 38)
+                }
             }
+        }
+        .fullScreenCover(isPresented: $model.isProductSearchViewPresented) {
+            ProductSearchView(
+                selectedCategoryId: model.selectedCategoryId,
+                onClose: { model.isProductSearchViewPresented = false },
+                onCompletion: { product in
+                    model.isProductSearchViewPresented = false
+                }
+            )
         }
         .onAppear(perform: {
             model.loadValue()
@@ -37,6 +56,9 @@ class LoginViewModel: ObservableObject {
     @Published var form = LoginForm(userId: "", password: "")
     @Published var isMainViewPresented = false
     @Published var errorMessage = ""
+
+    @Published var isProductSearchViewPresented = false
+    @Published var selectedCategoryId: Int?
 
     @MainActor
     func login() async {

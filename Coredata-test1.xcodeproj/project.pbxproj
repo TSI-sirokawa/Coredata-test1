@@ -21,6 +21,13 @@
 		8B98FE0B290F8B07002753BA /* M_CategoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B98FE0A290F8B07002753BA /* M_CategoryCardView.swift */; };
 		8BB667712C8D3D0600313900 /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB667702C8D3D0600313900 /* Setup.swift */; };
 		8BB667732C8D3DE300313900 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB667722C8D3DE300313900 /* AppDelegate.swift */; };
+		8BB667762C8EEC8300313900 /* ProductSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB667752C8EEC8300313900 /* ProductSearchView.swift */; };
+		8BB667782C8EEDFA00313900 /* ProductInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB667772C8EEDFA00313900 /* ProductInfo.swift */; };
+		8BB6677A2C8EEF8F00313900 /* ColorThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB667792C8EEF8F00313900 /* ColorThemeManager.swift */; };
+		8BB6677C2C8FF86900313900 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6677B2C8FF86800313900 /* SearchView.swift */; };
+		8BB6677E2C8FF90000313900 /* ProductListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6677D2C8FF90000313900 /* ProductListUseCase.swift */; };
+		8BB667802C8FF96500313900 /* ProductListForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6677F2C8FF96500313900 /* ProductListForm.swift */; };
+		8BB667822C8FFA0D00313900 /* ProductListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB667812C8FFA0D00313900 /* ProductListResult.swift */; };
 		8BBC27572C89A2C50023BA4F /* MregiLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC27562C89A2C50023BA4F /* MregiLogin.swift */; };
 		8BBC27592C89AB1C0023BA4F /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC27582C89AB1C0023BA4F /* LoginUseCase.swift */; };
 		8BBC275B2C89ACBB0023BA4F /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC275A2C89ACBB0023BA4F /* LoginForm.swift */; };
@@ -60,6 +67,13 @@
 		8BB667702C8D3D0600313900 /* Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setup.swift; sourceTree = "<group>"; };
 		8BB667722C8D3DE300313900 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BB667742C8D572800313900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8BB667752C8EEC8300313900 /* ProductSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductSearchView.swift; sourceTree = "<group>"; };
+		8BB667772C8EEDFA00313900 /* ProductInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductInfo.swift; sourceTree = "<group>"; };
+		8BB667792C8EEF8F00313900 /* ColorThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorThemeManager.swift; sourceTree = "<group>"; };
+		8BB6677B2C8FF86800313900 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		8BB6677D2C8FF90000313900 /* ProductListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListUseCase.swift; sourceTree = "<group>"; };
+		8BB6677F2C8FF96500313900 /* ProductListForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListForm.swift; sourceTree = "<group>"; };
+		8BB667812C8FFA0D00313900 /* ProductListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListResult.swift; sourceTree = "<group>"; };
 		8BBC27562C89A2C50023BA4F /* MregiLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MregiLogin.swift; sourceTree = "<group>"; };
 		8BBC27582C89AB1C0023BA4F /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 		8BBC275A2C89ACBB0023BA4F /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
@@ -161,6 +175,13 @@
 				8BBC277D2C8AC8A20023BA4F /* RefreshResult.swift */,
 				8BB667702C8D3D0600313900 /* Setup.swift */,
 				8BB667722C8D3DE300313900 /* AppDelegate.swift */,
+				8BB667752C8EEC8300313900 /* ProductSearchView.swift */,
+				8BB667772C8EEDFA00313900 /* ProductInfo.swift */,
+				8BB667792C8EEF8F00313900 /* ColorThemeManager.swift */,
+				8BB6677B2C8FF86800313900 /* SearchView.swift */,
+				8BB6677D2C8FF90000313900 /* ProductListUseCase.swift */,
+				8BB6677F2C8FF96500313900 /* ProductListForm.swift */,
+				8BB667812C8FFA0D00313900 /* ProductListResult.swift */,
 			);
 			path = mregiApi;
 			sourceTree = "<group>";
@@ -248,16 +269,21 @@
 				8BBC27572C89A2C50023BA4F /* MregiLogin.swift in Sources */,
 				8BBC277E2C8AC8A20023BA4F /* RefreshResult.swift in Sources */,
 				8BB667712C8D3D0600313900 /* Setup.swift in Sources */,
+				8BB6677C2C8FF86900313900 /* SearchView.swift in Sources */,
 				8B55263728FF8EED0001B69B /* Persistence.swift in Sources */,
 				8BBC27612C89B1200023BA4F /* UserInfo.swift in Sources */,
+				8BB667822C8FFA0D00313900 /* ProductListResult.swift in Sources */,
 				8B55263028FF8EE80001B69B /* ContentView.swift in Sources */,
 				8BBC27782C8AB02B0023BA4F /* PermanentDataManager.swift in Sources */,
 				8BBC27762C8AAF8B0023BA4F /* RefreshForm.swift in Sources */,
+				8BB6677E2C8FF90000313900 /* ProductListUseCase.swift in Sources */,
+				8BB667802C8FF96500313900 /* ProductListForm.swift in Sources */,
 				8BBC27672C8A97B20023BA4F /* APIRepository.swift in Sources */,
 				8BBC27632C89B1770023BA4F /* AuthInfo.swift in Sources */,
 				8B98FE09290F5DFF002753BA /* M_CategorySheetView.swift in Sources */,
 				8B98FE07290F45E1002753BA /* M_CategoryModel.swift in Sources */,
 				8B35FD73291A2FDD00A273AE /* M_CategoryListView.swift in Sources */,
+				8BB6677A2C8EEF8F00313900 /* ColorThemeManager.swift in Sources */,
 				8BBC277A2C8AB2FF0023BA4F /* Notification+.swift in Sources */,
 				8BBC275D2C89AD330023BA4F /* LoginResult.swift in Sources */,
 				8BB667732C8D3DE300313900 /* AppDelegate.swift in Sources */,
@@ -267,9 +293,11 @@
 				8BBC275F2C89AE060023BA4F /* BaseResult.swift in Sources */,
 				8BBC27692C8A989D0023BA4F /* APIDriver.swift in Sources */,
 				8BBC277C2C8AC7A70023BA4F /* DataRequest+validateUnauthorized.swift in Sources */,
+				8BB667782C8EEDFA00313900 /* ProductInfo.swift in Sources */,
 				8B98FE0B290F8B07002753BA /* M_CategoryCardView.swift in Sources */,
 				8BBC27702C8AAD350023BA4F /* JSONDecoder+Default.swift in Sources */,
 				8BBC27722C8AADB90023BA4F /* AuthManager.swift in Sources */,
+				8BB667762C8EEC8300313900 /* ProductSearchView.swift in Sources */,
 				8B55262E28FF8EE80001B69B /* Coredata_test1App.swift in Sources */,
 				8BBC27592C89AB1C0023BA4F /* LoginUseCase.swift in Sources */,
 			);

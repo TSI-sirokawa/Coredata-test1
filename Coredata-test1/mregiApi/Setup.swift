@@ -12,6 +12,9 @@ final class Setup {
         AppContainer.register(LoginUseCase.self) {
             LoginUseCase(repository: AppContainer.resolve(APIRepository.self))
         }
+        AppContainer.register(ProductListUseCase.self) {
+            ProductListUseCase(repository: AppContainer.resolve(APIRepository.self))
+        }
     }
 
     static func setUpClasses() {
