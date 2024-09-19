@@ -30,6 +30,14 @@ struct MregiLogin: View {
                     Text("商品リスト").font(.system(size: 20, weight: .bold))
                         .frame(width: 158, height: 38)
                 }
+                Button {
+                    SwiftUI.Task {
+                        model.isTransactionSearchViewPresented = true
+                    }
+                } label: {
+                    Text("取引リスト").font(.system(size: 20, weight: .bold))
+                        .frame(width: 158, height: 38)
+                }
             }
         }
         .fullScreenCover(isPresented: $model.isProductSearchViewPresented) {
@@ -38,6 +46,15 @@ struct MregiLogin: View {
                 onClose: { model.isProductSearchViewPresented = false },
                 onCompletion: { product in
                     model.isProductSearchViewPresented = false
+                }
+            )
+        }
+        .fullScreenCover(isPresented: $model.isTransactionSearchViewPresented) {
+            TransactionSearchView(
+                selectedCategoryId: model.selectedCategoryId,
+                onClose: { model.isTransactionSearchViewPresented = false },
+                onCompletion: { transact in
+                    model.isTransactionSearchViewPresented = false
                 }
             )
         }
@@ -58,6 +75,7 @@ class LoginViewModel: ObservableObject {
     @Published var errorMessage = ""
 
     @Published var isProductSearchViewPresented = false
+    @Published var isTransactionSearchViewPresented = false
     @Published var selectedCategoryId: Int?
 
     @MainActor

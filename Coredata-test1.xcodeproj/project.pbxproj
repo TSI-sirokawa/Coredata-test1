@@ -28,6 +28,11 @@
 		8BB6677E2C8FF90000313900 /* ProductListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6677D2C8FF90000313900 /* ProductListUseCase.swift */; };
 		8BB667802C8FF96500313900 /* ProductListForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6677F2C8FF96500313900 /* ProductListForm.swift */; };
 		8BB667822C8FFA0D00313900 /* ProductListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB667812C8FFA0D00313900 /* ProductListResult.swift */; };
+		8BB667842C9AA50600313900 /* Transactioninfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB667832C9AA50600313900 /* Transactioninfo.swift */; };
+		8BB667862C9AAE3000313900 /* TransactionListForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB667852C9AAE3000313900 /* TransactionListForm.swift */; };
+		8BB667882C9AAEED00313900 /* TransactionListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB667872C9AAEED00313900 /* TransactionListResult.swift */; };
+		8BB6678A2C9AAFDF00313900 /* TransactionListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB667892C9AAFDF00313900 /* TransactionListUseCase.swift */; };
+		8BB6678C2C9AB71D00313900 /* TransactionSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB6678B2C9AB71D00313900 /* TransactionSearchView.swift */; };
 		8BBC27572C89A2C50023BA4F /* MregiLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC27562C89A2C50023BA4F /* MregiLogin.swift */; };
 		8BBC27592C89AB1C0023BA4F /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC27582C89AB1C0023BA4F /* LoginUseCase.swift */; };
 		8BBC275B2C89ACBB0023BA4F /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBC275A2C89ACBB0023BA4F /* LoginForm.swift */; };
@@ -74,6 +79,11 @@
 		8BB6677D2C8FF90000313900 /* ProductListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListUseCase.swift; sourceTree = "<group>"; };
 		8BB6677F2C8FF96500313900 /* ProductListForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListForm.swift; sourceTree = "<group>"; };
 		8BB667812C8FFA0D00313900 /* ProductListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListResult.swift; sourceTree = "<group>"; };
+		8BB667832C9AA50600313900 /* Transactioninfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactioninfo.swift; sourceTree = "<group>"; };
+		8BB667852C9AAE3000313900 /* TransactionListForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListForm.swift; sourceTree = "<group>"; };
+		8BB667872C9AAEED00313900 /* TransactionListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListResult.swift; sourceTree = "<group>"; };
+		8BB667892C9AAFDF00313900 /* TransactionListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListUseCase.swift; sourceTree = "<group>"; };
+		8BB6678B2C9AB71D00313900 /* TransactionSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionSearchView.swift; sourceTree = "<group>"; };
 		8BBC27562C89A2C50023BA4F /* MregiLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MregiLogin.swift; sourceTree = "<group>"; };
 		8BBC27582C89AB1C0023BA4F /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 		8BBC275A2C89ACBB0023BA4F /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
@@ -182,6 +192,11 @@
 				8BB6677D2C8FF90000313900 /* ProductListUseCase.swift */,
 				8BB6677F2C8FF96500313900 /* ProductListForm.swift */,
 				8BB667812C8FFA0D00313900 /* ProductListResult.swift */,
+				8BB667852C9AAE3000313900 /* TransactionListForm.swift */,
+				8BB6678B2C9AB71D00313900 /* TransactionSearchView.swift */,
+				8BB667872C9AAEED00313900 /* TransactionListResult.swift */,
+				8BB667892C9AAFDF00313900 /* TransactionListUseCase.swift */,
+				8BB667832C9AA50600313900 /* Transactioninfo.swift */,
 			);
 			path = mregiApi;
 			sourceTree = "<group>";
@@ -265,10 +280,14 @@
 			files = (
 				8B8C95A5291B3E630016E5C9 /* M_CategoryLinkView.swift in Sources */,
 				8BBC27742C8AAEAD0023BA4F /* OAuthAuthenticator.swift in Sources */,
+				8BB667842C9AA50600313900 /* Transactioninfo.swift in Sources */,
 				8B8C95A7291B80F40016E5C9 /* M_CategoryTableView.swift in Sources */,
 				8BBC27572C89A2C50023BA4F /* MregiLogin.swift in Sources */,
+				8BB6678C2C9AB71D00313900 /* TransactionSearchView.swift in Sources */,
+				8BB6678A2C9AAFDF00313900 /* TransactionListUseCase.swift in Sources */,
 				8BBC277E2C8AC8A20023BA4F /* RefreshResult.swift in Sources */,
 				8BB667712C8D3D0600313900 /* Setup.swift in Sources */,
+				8BB667882C9AAEED00313900 /* TransactionListResult.swift in Sources */,
 				8BB6677C2C8FF86900313900 /* SearchView.swift in Sources */,
 				8B55263728FF8EED0001B69B /* Persistence.swift in Sources */,
 				8BBC27612C89B1200023BA4F /* UserInfo.swift in Sources */,
@@ -289,6 +308,7 @@
 				8BB667732C8D3DE300313900 /* AppDelegate.swift in Sources */,
 				8BBC27652C8A97000023BA4F /* AppContainer.swift in Sources */,
 				8BBC275B2C89ACBB0023BA4F /* LoginForm.swift in Sources */,
+				8BB667862C9AAE3000313900 /* TransactionListForm.swift in Sources */,
 				8B55263A28FF8EED0001B69B /* Coredata_test1.xcdatamodeld in Sources */,
 				8BBC275F2C89AE060023BA4F /* BaseResult.swift in Sources */,
 				8BBC27692C8A989D0023BA4F /* APIDriver.swift in Sources */,

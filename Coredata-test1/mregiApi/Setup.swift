@@ -15,6 +15,10 @@ final class Setup {
         AppContainer.register(ProductListUseCase.self) {
             ProductListUseCase(repository: AppContainer.resolve(APIRepository.self))
         }
+//TransactionListの為に追加
+        AppContainer.register(TransactionListUseCase.self) {
+            TransactionListUseCase(repository: AppContainer.resolve(APIRepository.self))
+        }
     }
 
     static func setUpClasses() {

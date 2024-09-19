@@ -141,10 +141,10 @@
             filePath = "Coredata-test1/mregiApi/MregiLogin.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
-            landmarkName = "LoginViewModel"
-            landmarkType = "3">
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "isProductSearchViewPresented"
+            landmarkType = "24">
             <Locations>
                <Location
                   uuid = "673B249B-4642-4182-8B77-5E02BFF88BE8 - ef998a4583884591"
@@ -234,8 +234,8 @@
             filePath = "Coredata-test1/mregiApi/APIDriver.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "224"
-            endingLineNumber = "224"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
             landmarkName = "request(endpoint:data:callback:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -250,25 +250,57 @@
             filePath = "Coredata-test1/mregiApi/APIDriver.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "236"
-            endingLineNumber = "236"
+            startingLineNumber = "243"
+            endingLineNumber = "243"
             landmarkName = "request(endpoint:data:callback:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "494876DA-76B3-4D85-8C08-B1D0971F8E8C - 196826153e23eec7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Alamofire.DataResponse&lt;Swift.String, Alamofire.AFError&gt;) -&gt; () in Coredata_test1.APIDriver.request(endpoint: Coredata_test1.APIDriver.Endpoint, data: Swift.Dictionary&lt;Swift.String, Any&gt;, callback: (Swift.Optional&lt;Coredata_test1.APIDriverResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Coredata-test1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirokawakazunori/Documents/LearnCoredata/Coredata-test1/Coredata-test1/mregiApi/APIDriver.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "236"
+                  endingLineNumber = "236"
+                  offsetFromSymbolStart = "71">
+               </Location>
+               <Location
+                  uuid = "494876DA-76B3-4D85-8C08-B1D0971F8E8C - 196826153e23e9ee"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Alamofire.DataResponse&lt;Swift.String, Alamofire.AFError&gt;) -&gt; () in Coredata_test1.APIDriver.request(endpoint: Coredata_test1.APIDriver.Endpoint, data: Swift.Dictionary&lt;Swift.String, Any&gt;, callback: (Swift.Optional&lt;Coredata_test1.APIDriverResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Coredata-test1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirokawakazunori/Documents/LearnCoredata/Coredata-test1/Coredata-test1/mregiApi/APIDriver.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "243"
+                  endingLineNumber = "243"
+                  offsetFromSymbolStart = "71">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "7CADE999-5824-4886-906C-FC080BD0D3B0"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Coredata-test1/mregiApi/MregiLogin.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "login()"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "loadValue()"
             landmarkType = "7">
             <Locations>
                <Location
@@ -344,8 +376,8 @@
             filePath = "Coredata-test1/mregiApi/APIDriver.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "250"
-            endingLineNumber = "250"
+            startingLineNumber = "257"
+            endingLineNumber = "257"
             landmarkName = "output(response:onCompleted:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -379,6 +411,101 @@
             startingLineNumber = "139"
             endingLineNumber = "139"
             landmarkName = "fetch(categoryId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FDE24CB2-D034-4EDA-928F-DAF06FBF09D3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Coredata-test1/mregiApi/TransactionSearchView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "fetch(categoryId:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FDE24CB2-D034-4EDA-928F-DAF06FBF09D3 - bae6e57a04698cc8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Coredata_test1.TransactionSearchViewModel.fetch(categoryId: Swift.Optional&lt;Swift.Int&gt;) async -&gt; ()"
+                  moduleName = "Coredata-test1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirokawakazunori/Documents/LearnCoredata/Coredata-test1/Coredata-test1/mregiApi/TransactionSearchView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "102">
+               </Location>
+               <Location
+                  uuid = "FDE24CB2-D034-4EDA-928F-DAF06FBF09D3 - 87f782cfc8c73f27"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for Coredata_test1.TransactionSearchViewModel.fetch(categoryId: Swift.Optional&lt;Swift.Int&gt;) async -&gt; ()"
+                  moduleName = "Coredata-test1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirokawakazunori/Documents/LearnCoredata/Coredata-test1/Coredata-test1/mregiApi/TransactionSearchView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "34">
+               </Location>
+               <Location
+                  uuid = "FDE24CB2-D034-4EDA-928F-DAF06FBF09D3 - 46986cf63380c0ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Coredata_test1.TransactionSearchViewModel.fetch(categoryId: Swift.Optional&lt;Swift.Int&gt;) async -&gt; ()"
+                  moduleName = "Coredata-test1"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/shirokawakazunori/Documents/LearnCoredata/Coredata-test1/Coredata-test1/mregiApi/TransactionSearchView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "249">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D7AFE359-15E2-48AD-B06F-68AC38BAF8DD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Coredata-test1/mregiApi/APIDriver.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "289"
+            endingLineNumber = "289"
+            landmarkName = "output(response:onCompleted:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D50E7F29-0AA8-4AA0-A1A0-825712EBB088"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Coredata-test1/mregiApi/ProductSearchView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "productList()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

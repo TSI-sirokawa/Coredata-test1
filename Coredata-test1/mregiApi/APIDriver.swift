@@ -95,6 +95,9 @@ class APIDriver {
         // 出金区分関連
         case getWithdrawalDivisionList
         case addWithdrawalDivision
+        
+        // 取引関連
+        case getTransactionList
 
         func toPath() -> String {
             switch self {
@@ -139,6 +142,8 @@ class APIDriver {
 
             case .getWithdrawalDivisionList: return "/api/v1/WithdrawalDivision"
             case .addWithdrawalDivision: return "/api/v1/WithdrawalDivision"
+                // 取引関連
+                case .getTransactionList: return "/api/v1/Transaction"
             }
         }
 
@@ -170,6 +175,8 @@ class APIDriver {
             case .addTransactionTag: return .post
             case .getWithdrawalDivisionList: return .get
             case .addWithdrawalDivision: return .post
+                
+            case .getTransactionList: return .get //追加
             }
         }
 
