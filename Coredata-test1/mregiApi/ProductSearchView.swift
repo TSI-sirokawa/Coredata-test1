@@ -21,7 +21,7 @@ struct ProductSearchView: View {
             Spacer()
         }
         .cornerRadius(10)
-        .frame(width: 550, height: 630)
+        .frame(width: 850, height: 630)
     }
 
     private func headerView() -> some View {
@@ -34,7 +34,7 @@ struct ProductSearchView: View {
                 Button {
                     onClose()
                 } label: {
-                    Text("")
+                    Text("終了")
                 }
             }
             .padding(.horizontal, 20)
