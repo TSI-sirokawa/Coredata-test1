@@ -229,6 +229,7 @@ class APIDriver {
         let interceptor = endpoint.isRequireAccessToken() ? authenticationInterceptor : nil
         var headers = HTTPHeaders()
         debugPrint("🌸http request : \(httpMethod) -> \(url)")
+        print("request startnow : \(Date())")
         switch httpMethod {
         case .post, .put:
             headers.add(.contentType("application/json"))
@@ -247,6 +248,7 @@ class APIDriver {
             AF.request(url, method: .get, parameters: params, interceptor: interceptor).validateUnauthorized()
                 .responseString { response in
                     self.output(response: response, onCompleted: callback)
+                    print("request endnow : \(Date())")
                 }
         default:
             break

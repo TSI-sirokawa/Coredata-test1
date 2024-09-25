@@ -97,7 +97,7 @@ struct TransactionSearchView: View {
                                 .font(.system(size: 15))
                                 .foregroundColor(ColorThemeManager.Constant.textSecondary).padding(.leading, 15)
                         }
-                        Text("¥\(transaction.subtotal)")
+                        Text("¥\(transaction.storeId)")
                             .font(.system(size: 20))
                             .foregroundColor(ColorThemeManager.shared.primary)
                             .lineLimit(1)
@@ -105,10 +105,10 @@ struct TransactionSearchView: View {
                     }
                     Spacer()
                     VStack(spacing: 0.0) {
-                        Text("単価")
+                        Text("合計金額")
                             .foregroundColor(ColorThemeManager.Constant.textSecondary)
                             .font(.system(size: 15))
-                        Text("¥\(transaction.total)")
+                        Text("¥\(transaction.transactionId)")
                             .font(.system(size: 20))
                             .foregroundColor(ColorThemeManager.shared.primary)
                     }
@@ -123,7 +123,7 @@ struct TransactionSearchView: View {
 
 
 class TransactionSearchViewModel: ObservableObject {
-    let perPageCount = 100
+    let perPageCount = 50 //100
     @Published var keyword = ""
     @Published var isLoading = false
     @Published var isRefreshing = false
